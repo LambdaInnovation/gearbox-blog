@@ -1,0 +1,70 @@
+<div class="sidebar">
+  <div class="header">
+    <h1 class="title"><a href="<%- url_for('/') %>"><%= config.title %></a></h1>
+    <% if (config.subtitle) { %>
+      <p class="subtitle">
+        <%= config.subtitle %>
+      </p>
+    <% } %>
+    <div class="info">
+      <div class="content">
+        <% if (config.description) { %>
+          <div class="description"><%= config.description %></div>
+        <% } %>
+        <% if (config.author) { %>
+          <div class="author"><%= config.author %></div>
+        <% } %>
+      </div>
+      <% if (theme.avatar) { %>
+        <div class="avatar">
+          <% if (theme.avatarLink) { %>
+            <a href="<%= theme.avatarLink %>"><img src="<%= theme.avatar %>"></a>
+          <% } else { %>
+            <img src="<%= theme.avatar %>">
+          <% } %>
+        </div>
+      <% } %>
+    </div>
+  </div>
+  <div class="body">
+    <% if (theme.nav && theme.nav.length) { %>
+      <% theme.nav.forEach(function(list) { %>
+        <ul class="nav">
+          <% list.forEach(function(item){ %>
+            <% if (item === 'blog') { %>
+              <li class="category-list-container">
+                <a href="javascript:;"><%- __('blog') %></a>
+                <%- list_categories({depth: -1}).replace('/categories/', '/' + page.lang + '/categories/') %>
+              </li>
+            <% } else if (item === 'tags') { %>
+              <li class="tag-list-container">
+                <a href="javascript:;"><%- __('tag') %></a>
+                <%- list_tags({}) %>
+              </li>
+            <% } else if (item === 'archives') { %>
+              <li class="archive-list-container">
+                <a href="javascript:;"><%- __('archive') %></a>
+                <%- list_archives({type: 'yearly'}) %>
+              </li>
+            <% } else if (item == 'homepage') { %>
+              <li>
+              <%- link_to('/'.concat(page.lang, '/').toLowerCase(), __('homepage'), {external:false}) %>
+              </li>
+            <% } else { %>
+              <li>
+              <%- link_to(''.concat(page.lang, '/', item.path).toLowerCase(), __(item.name)) %>
+              </li>
+            <% } %>
+          <% }) %>
+        </ul>
+      <% }); %>
+      <ul class="nav">
+      <br><br><br><br>
+      <li class="tag-list-container">
+          <a href=<%= change_path_lang(page.path, 'zh-cn') %> class="lang-select">简体中文</a>
+          <a href=<%= change_path_lang(page.path, 'en') %> class="lang-select">English</a>
+      </li>    
+      </ul>
+    <% } %>
+  </div>
+</div>
