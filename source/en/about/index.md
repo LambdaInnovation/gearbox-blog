@@ -29,5 +29,5 @@ Draw FAT Things(sometimes), beiFATng lazy(all the tieme)。A Brony，with a norm
 
 You were infected by some kind of meme, if you saw FAT more than 2 times.
 
-* [email](panfengjason@qq.com)
+* [email](mailto:panfengjason@qq.com)
 

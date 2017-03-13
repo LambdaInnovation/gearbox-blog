@@ -29,4 +29,4 @@ date: 2017-02-19 16:00:47
 
 如果你在上面的文字里看到两个以上的月巴，说明你受到了模因感染。
 
-* [email](panfengjason@qq.com)
+* [email](mailto:panfengjason@qq.com)
