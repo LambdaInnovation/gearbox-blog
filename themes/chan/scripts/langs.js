@@ -7,7 +7,7 @@ function change_path_lang(path, new_lang) {
     }
 
     if (idx == -1) {
-        return '/' + new_lang + '/';
+        return '/' + new_lang + '/' + path;
     }
     return '/' + new_lang + '/' + path.substring(idx+1);
 }
