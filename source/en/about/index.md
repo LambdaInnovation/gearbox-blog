@@ -25,4 +25,9 @@ I've been practicing parkour for ~7 yrs and really loves it, and that's probably
 
 **Game Design, Art**
 
+Draw FAT Things(sometimes), beiFATng lazy(all the tieme)。A Brony，with a normal brain。Made and making MinFATecraft Mod with WeAthFolD。
+
+You were infected by some kind of meme, if you saw FAT more than 2 times.
+
+* [email](panfengjason@qq.com)
 

@@ -25,4 +25,8 @@ date: 2017-02-19 16:00:47
 
 **策划, 美术**
 
+摸月巴鱼的，偶月巴尔画画。Brony，精神正常。（曾且正在）和WeAthFolD一起制作Min月巴ecraft Mod。
 
+如果你在上面的文字里看到两个以上的月巴，说明你受到了模因感染。
+
+* [email](panfengjason@qq.com)
